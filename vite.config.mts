@@ -53,6 +53,7 @@ export default defineConfig({
       },
     }),
   ],
+  base: '/cadastroaluno',
   define: { 'process.env': {} },
   resolve: {
     alias: {

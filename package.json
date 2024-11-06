@@ -2,10 +2,15 @@
   "name": "cadastroaluno",
   "version": "0.0.0",
   "scripts": {
+    "homepage":"https://adrianresende.github.io/cadastroaluno",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
